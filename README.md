@@ -116,6 +116,32 @@ A starship with ID "220" already exists in the system.
 
 ---
 
+**Steps:**
+1. Open Postman  
+2. Select method POST  
+3. Enter request URL  
+4. Add request body with already existing ID  
+5. Send request  
+
+---
+
+**Expected Result:**
+- Status code = 400 Bad Request  
+- Response contains error message indicating duplicate or invalid resource creation  
+- No new starship is created in the system  
+
+---
+
+**Actual Result:**
+Status code = 400 returned by server.  
+Request is rejected due to duplicate entity (existing ID).
+
+---
+
+**Status:** Passed
+
+---
+
 ## Battle.net Login
 
 ### TC-006: Login flow
