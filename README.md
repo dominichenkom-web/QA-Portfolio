@@ -38,6 +38,7 @@ The issue was logged in the bug tracker for further investigation
 
 **4. Verify font family, size and style on the "Jessie's Blog" page**
 
+
 **Swagger\Starships**
 
 **1. POST: Starship - Create new starship with valid data (201)**
@@ -73,7 +74,9 @@ Response headers contain Contenr-Type: application/json
 
 2. **POST Starship - Unauthorized request (400)**
 
+
 **Test cases without suite**
+
 
 **1. Log in Battle.net**
 
