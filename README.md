@@ -109,12 +109,10 @@ https://qasandbox-production.up.railway.app/api/starships
   "status": "available"
 }
 
----
 
 **Precondition:**
 A starship with ID "220" already exists in the system.
 
----
 
 **Steps:**
 1. Open Postman  
@@ -123,20 +121,17 @@ A starship with ID "220" already exists in the system.
 4. Add request body with duplicate ID  
 5. Send request  
 
----
 
 **Expected Result:**
 - Status code = 400 Bad Request  
 - Error message indicates duplicate resource  
 - No new record is created  
 
----
 
 **Actual Result:**
 Status code 400 is returned.  
 Request is rejected due to duplicate ID.
 
----
 
 **Status:** Passed
 ---
@@ -154,3 +149,7 @@ Request is rejected due to duplicate ID.
 
 **Expected Result:**  
 User successfully logs in and is redirected to homepage
+**Actual Result:**  
+User is successfully logged in and redirected to homepage
+
+**Status:** Passed
