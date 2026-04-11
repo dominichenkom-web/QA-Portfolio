@@ -4,6 +4,7 @@
 
 **Pet Shop**
 **1. Verify the "Popular" sidebar on the "Jessie's Blog" page**
+
 Steps:
 1. Scroll down to the header of the "Popular" side bar
    Expected Result: The "Popular" sidebar is visible and correctly displayed on the right side
@@ -13,6 +14,7 @@ Steps:
 The issue was logged in the bug tracker for further investigation
 
 **2. Verify dropdown menu fields on the Shop page**
+
 Steps:
 1. Observe the "Sorting" dropdown menu
    Expected Result: "Sorting" dropdown menu is fully visible, label does not overlap with other UI elements
@@ -28,6 +30,7 @@ The issue was logged in the bug tracker for further investigation
 
 **Swagger\Starships**
 **1. POST: Starship - Create new starship with valid data (201)**
+  
    Steps:
 1. Open Postman, select POST and paste URL from data
    Input data: https://qasandbox-production.up.railway.app/api/starships
