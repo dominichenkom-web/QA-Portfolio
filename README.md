@@ -13,49 +13,64 @@ I continuously update and expand this portfolio with new test cases and projects
 ### TC-001: Verify the "Popular" sidebar on the "Jessie's Blog" page
 
 **Steps:**
-1. Scroll down to the header of the "Popular" sidebar  
-   **Expected Result:** Sidebar is visible and correctly displayed on the right side
+1. Scroll down to the "Popular" sidebar header  
+   **Expected Result:** Sidebar is visible and correctly placed on the right side  
 
-2. Scroll until the sidebar disappears from view  
-   **Expected Result:** Sidebar remains visible and properly aligned during scrolling
+2. Scroll page  
+   **Expected Result:** Sidebar remains visible and properly aligned  
 
 **Actual Result:**  
-Sidebar displayed incorrectly, rotated to the left side.  
-When page is scrolled, sidebar starts to rotate to the other side.
+Sidebar displayed incorrectly, rotated to the left side during scrolling.
 
 **Status:** Failed  
-**Bug:** Logged in bug tracker
+**Bug Report:** Logged in Jira
 
 ---
 
 ### TC-002: Verify dropdown menu fields on the Shop page
 
 **Steps:**
-1. Observe the "Sorting" dropdown menu  
-   **Expected Result:** Fully visible, no overlap
+1. Check "Sorting" dropdown  
+   **Expected Result:** No overlap, correct alignment  
 
-2. Observe the "Manufacturer" dropdown menu  
-   **Expected Result:** Fully visible, no overlap
+2. Check "Manufacturer" dropdown  
+   **Expected Result:** No overlap, correct alignment  
 
-3. Observe the "Number" dropdown menu  
-   **Expected Result:** Fully visible, no overlap
+3. Check "Number" dropdown  
+   **Expected Result:** No overlap, correct alignment  
 
 **Actual Result:**  
-Labels are misaligned and text overlaps with other UI elements.
+All dropdown labels are misaligned and overlapping UI elements.
 
 **Status:** Failed  
-**Bug:** Logged in bug tracker
+**Bug Report:** Logged in Jira
+
+---
+
+### TC-003: Tips page opens after clicking button
+
+**Steps:**
+1. Hover over "About Us"  
+   **Expected Result:** Dropdown appears  
+
+2. Click "Tips"  
+   **Expected Result:** Tips page opens  
+
+**Actual Result:**  
+Actual result matches expected result.
+
+**Status:** Passed
 
 ---
 
 ## Swagger / Starships
 
-### TC-003: Create new starship with valid data (POST / 201)
+### TC-004: Create starship (POST / 201)
 
-**Tool:** Postman
+**Request URL:**  
+https://qasandbox-production.up.railway.app/api/starships
 
 **Request Body:**
-```json
 {
   "id": "220",
   "name": "qwac",
@@ -63,4 +78,36 @@ Labels are misaligned and text overlaps with other UI elements.
   "volume": 1000000,
   "range": 100,
   "status": "available"
-} 
+}
+
+**Expected Result:**
+- Status code 201  
+- Response contains all fields  
+- Content-Type application/json  
+
+**Actual Result:**  
+Matches expected result
+
+**Status:** Passed
+
+---
+
+### TC-005: Unauthorized request (POST / 400)
+
+**Status:** To be implemented
+
+---
+
+## Battle.net Login
+
+### TC-006: Login flow
+
+**Steps:**
+1. Open https://eu.shop.battle.net/  
+2. Open Account menu  
+3. Click "Log in"  
+4. Enter email and password  
+5. Click "Log in"  
+
+**Expected Result:**  
+User successfully logs in and is redirected to homepage
