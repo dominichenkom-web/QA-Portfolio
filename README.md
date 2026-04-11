@@ -149,6 +149,7 @@ Request is rejected due to duplicate ID.
 
 **Expected Result:**  
 User successfully logs in and is redirected to homepage
+
 **Actual Result:**  
 User is successfully logged in and redirected to homepage
 
