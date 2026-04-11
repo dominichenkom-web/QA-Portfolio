@@ -47,6 +47,3 @@ On the Jessie’s Blog page, the banner with the lizard image at the top of the 
 
 I continuously update and expand this section with new bug reports and testing practice as I continue to improve my QA skills.
 ---
-
-###**I continuously update and expand this section with new bug reports and testing practice as I continue to improve my QA skills.
-**
