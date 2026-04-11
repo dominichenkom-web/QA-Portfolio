@@ -1,3 +1,5 @@
+
+
 **#Jira Projects**
 
 **This section higlights the bug reports and tasks Iworked on in Jira, linked to my QA test cases.**
@@ -36,4 +38,5 @@ Link to Bug Report: [Verify font family, size and style on the "Jessie's Blog" p
 
 ---
 
-I continuously update and expand this section with new bug reports and testing practice as I continue to improve my QA skills.
+###**I continuously update and expand this section with new bug reports and testing practice as I continue to improve my QA skills.
+**
