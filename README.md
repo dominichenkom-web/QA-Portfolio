@@ -1,7 +1,6 @@
-#**This repository is a portfolio showcasing my QA test cases and projects, developed on the QAse platform**
-##**Test Suites**
-
-###**Pet Shop**
+**This repository is a portfolio showcasing my QA test cases and projects, developed on the QAse platform**
+**Test Suites**
+**Pet Shop**
 **1. Verify the "Popular" sidebar on the "Jessie's Blog" page**
 Steps:
 1. Scroll down to the header of the "Popular" side bar
@@ -25,7 +24,7 @@ The issue was logged in the bug tracker for further investigation
 **3. "Tips" page opens after clicking the button**
 **4. Verify font family, size and style on the "Jessie's Blog" page**
 
-###**Swagger\Starships**
+**Swagger\Starships**
 **1. POST: Starship - Create new starship with valid data (201)**
    Steps:
 1. Open Postman, select POST and paste URL from data
@@ -50,7 +49,7 @@ Response headers contain Contenr-Type: application/json
 
 2. **POST Starship - Unauthorized request (400)**
 
-###**Test cases without suite**
+**Test cases without suite**
 **1. Log in Battle.net**
 Steps:
 1. Open the Battle.net homepage
