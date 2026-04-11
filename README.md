@@ -28,8 +28,10 @@ Steps:
    Expected Result: "Manufacturer" dropdown menu is fully visible, label does not overlap with other UI elements
 
 3. Observe the "Number" dropdown menu
+
    Expected Result: "Number" dropdown menu is fully visible, label does not overlap with other UI elements
-   Actual Result: For all 3 dropdown menu labels are misaligned, and the text inside the dropdowns overlaps with other text elements.
+
+    Actual Result: For all 3 dropdown menu labels are misaligned, and the text inside the dropdowns overlaps with other text elements.
 The issue was logged in the bug tracker for further investigation
 
 **3. "Tips" page opens after clicking the button**
