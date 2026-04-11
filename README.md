@@ -92,9 +92,27 @@ Matches expected result
 
 ---
 
-### TC-005: Unauthorized request (POST / 400)
+### TC-005: Create new starship with existing ID (POST / 400 Unauthorized / Bad Request)
 
-**Status:** To be implemented
+**Tool:** Postman  
+
+**Request URL:**
+https://qasandbox-production.up.railway.app/api/starships
+
+**Request Body:**
+{
+  "id": "220",
+  "name": "qwac",
+  "capacity": 10000,
+  "volume": 1000000,
+  "range": 100,
+  "status": "available"
+}
+
+---
+
+**Precondition:**
+A starship with ID "220" already exists in the system.
 
 ---
 
