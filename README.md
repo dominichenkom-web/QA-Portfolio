@@ -6,151 +6,57 @@ I continuously update and expand this portfolio with new test cases and projects
 
 ---
 
-# Test Suites
+## About Me
 
-## Pet Shop
+I have practical, hands-on experience in manual QA testing, with a strong focus on web applications, usability, and data validation. I approach testing from a real user’s perspective, identifying edge cases, inconsistencies, and potential risks.
 
-### TC-001: Verify the "Popular" sidebar on the "Jessie's Blog" page
+## Manual Web Testing Experience
 
-**Steps:**
-1. Scroll down to the "Popular" sidebar header  
-   **Expected Result:** Sidebar is visible and correctly placed on the right side  
+I tested the Ben & Jerry's UK website, where I identified:
+- UI/UX inconsistencies and layout issues  
+- Incorrect behavior and display of search results  
+- Form validation problems (invalid inputs, missing validation, character limits)  
+- Issues in user flows and interaction logic  
 
-2. Scroll page  
-   **Expected Result:** Sidebar remains visible and properly aligned  
+## Testing Approach
 
-**Actual Result:**  
-Sidebar displayed incorrectly, rotated to the left side during scrolling.
+- Creating and executing test cases  
+- Exploratory testing  
+- Positive and negative testing  
+- Verifying business logic and input validation  
+- Cross-browser testing  
 
-**Status:** Failed  
-**Bug Report:** Logged in Jira
+## API Testing
 
----
+- Testing APIs using Postman  
+- Validating status codes and response bodies  
+- Testing authentication and security (tokens)  
+- Working with request parameters and JSON  
+- Writing simple scripts and using JSON data  
 
-### TC-002: Verify dropdown menu fields on the Shop page
+## Database Testing
 
-**Steps:**
-1. Check "Sorting" dropdown  
-   **Expected Result:** No overlap, correct alignment  
+- Verifying data after test execution using SQL  
+- Checking if entities are correctly created or deleted  
+- Validating system state and data consistency  
 
-2. Check "Manufacturer" dropdown  
-   **Expected Result:** No overlap, correct alignment  
+Common queries:
+- SELECT  
+- Aggregate functions (e.g., SUM)  
+- JOIN  
 
-3. Check "Number" dropdown  
-   **Expected Result:** No overlap, correct alignment  
+## Bug Detection
 
-**Actual Result:**  
-All dropdown labels are misaligned and overlapping UI elements.
-
-**Status:** Failed  
-**Bug Report:** Logged in Jira
-
----
-
-### TC-003: Tips page opens after clicking button
-
-**Steps:**
-1. Hover over "About Us"  
-   **Expected Result:** Dropdown appears  
-
-2. Click "Tips"  
-   **Expected Result:** Tips page opens  
-
-**Actual Result:**  
-Actual result matches expected result.
-
-**Status:** Passed
-
----
-
-## Swagger / Starships
-
-### TC-004: Create starship (POST / 201)
-
-**Request URL:**  
-https://qasandbox-production.up.railway.app/api/starships
-
-**Request Body:**
-{
-  "id": "220",
-  "name": "qwac",
-  "capacity": 10000,
-  "volume": 1000000,
-  "range": 100,
-  "status": "available"
-}
-
-**Expected Result:**
-- Status code 201  
-- Response contains all fields  
-- Content-Type application/json  
-
-**Actual Result:**  
-Matches expected result
-
-**Status:** Passed
-
----
-
-### TC-005: Attempt to create starship with duplicate ID (POST / 400 Bad Request)
-
-**Tool:** Postman  
-
-**Request URL:**
-https://qasandbox-production.up.railway.app/api/starships
-
-**Request Body:**
-{
-  "id": "220",
-  "name": "qwac",
-  "capacity": 10000,
-  "volume": 1000000,
-  "range": 100,
-  "status": "available"
-}
+Common issues I’ve identified:
+- Incorrect HTTP status codes with valid data  
+- Deleted entities still present in the database  
+- Requests working without authorization token (security issue)  
+- Missing validation (e.g., unlimited input length)  
 
 
-**Precondition:**
-A starship with ID "220" already exists in the system.
+## Crowdtesting Experience
 
-
-**Steps:**
-1. Open Postman  
-2. Select method POST  
-3. Enter request URL  
-4. Add request body with duplicate ID  
-5. Send request  
-
-
-**Expected Result:**
-- Status code = 400 Bad Request  
-- Error message indicates duplicate resource  
-- No new record is created  
-
-
-**Actual Result:**
-Status code 400 is returned.  
-Request is rejected due to duplicate ID.
-
-
-**Status:** Passed
----
-
-## Battle.net Login
-
-### TC-006: Login flow
-
-**Steps:**
-1. Open https://eu.shop.battle.net/  
-2. Open Account menu  
-3. Click "Log in"  
-4. Enter email and password  
-5. Click "Log in"  
-
-**Expected Result:**  
-User successfully logs in and is redirected to homepage
-
-**Actual Result:**  
-User is successfully logged in and redirected to homepage
-
-**Status:** Passed
+I collaborate with platforms such as Testbirds and uTest:
+- Participating in real testing projects  
+- Writing detailed bug reports  
+- Following structured testing processes  
