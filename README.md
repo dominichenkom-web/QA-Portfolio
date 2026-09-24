@@ -30,6 +30,8 @@ I approach testing from a real-user perspective, focusing on edge cases, inconsi
 
 ## Testing Experience
 
+> **Note:** Bug reports referenced in this portfolio are tracked in a personal Jira instance created for practice purposes. As there is no development team attached, reported issues remain in "In Progress" status rather than being resolved.
+
 ### Web Testing
 Tested the Ben & Jerry's UK website, where I identified:
 - UI/UX inconsistencies and layout issues  
@@ -46,17 +48,6 @@ Tested the Ben & Jerry's UK website, where I identified:
 - Working with request parameters and JSON  
 - Writing simple scripts and using JSON data  
 
----
-
-### Database Testing
-- Verifying data after test execution using SQL  
-- Checking if entities are correctly created or deleted  
-- Validating system state and data consistency  
-
-Common queries:
-- SELECT  
-- JOIN  
-- Aggregate functions (SUM, COUNT)  
 
 ---
 
