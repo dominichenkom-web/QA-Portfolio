@@ -39,7 +39,7 @@ On the Jessie’s Blog page, the banner with the lizard image at the top of the 
 **Status:** In Progress
 
 **Link to Bug Report:**  
-[Verify font family, size and style on the "Jessie's Blog" page](https://dominichenkom.atlassian.net/browse/PSB-2)
+[TC-007: Verify banner text readability on the "Jessie's Blog" page](https://dominichenkom.atlassian.net/browse/PSB-2)
 
 ---
 
