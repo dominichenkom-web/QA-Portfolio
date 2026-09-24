@@ -78,13 +78,23 @@ https://qasandbox-production.up.railway.app/api/starships
 - Content-Type application/json  
 
 **Actual Result:**  
-Matches expected result
+Status code 201 returned.
+
+Response body:
+{
+  "id": "220",
+  "name": "qwac",
+  "capacity": 10000,
+  "volume": 1000000,
+  "range": 100,
+  "status": "available"
+}
 
 **Status:** Passed
 
 ---
 
-### TC-005: Attempt to create starship with duplicate ID (POST / 400 Bad Request)
+### TC-005: Attempt to create starship with duplicate ID (POST / 400 Bad Request) (related to TC-004)
 
 **Tool:** Postman  
 
@@ -121,8 +131,14 @@ A starship with ID "220" already exists in the system.
 
 
 **Actual Result:**
-Status code 400 is returned.  
+Status code 400 returned.
 Request is rejected due to duplicate ID.
+
+Response body:
+{
+  "error": "Starship with id '220' already exists",
+  "status": 400
+}
 
 
 **Status:** Passed
