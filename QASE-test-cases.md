@@ -162,3 +162,15 @@ User successfully logs in and is redirected to homepage
 User is successfully logged in and redirected to homepage
 
 **Status:** Passed
+
+### TC-007: Verify banner text readability on the "Jessie's Blog" page
+
+**Steps:**
+1. Open the "Jessie's Blog" page  
+   **Expected Result:** Banner text is clearly readable against the background
+
+**Actual Result:**  
+Banner background image and text use the same color, making the text difficult to read.
+
+**Status:** Failed  
+**Bug Report:** Logged in Jira
